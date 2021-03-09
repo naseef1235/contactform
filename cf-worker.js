@@ -1,8 +1,8 @@
 // Bot API Key
-const BOT_TOKEN = '123456789:abcdefghijklmnopqrstuvwxyz';
+const BOT_TOKEN = '1622330427:AAFHmTu4R3b2sHjWXIvzC338cmkwjogX1OY';
 
 // Your Telegram USER ID
-const CHATID = '981558170';
+const CHATID = '1058885931';
 
 addEventListener('fetch', event => {
     event.respondWith(handleRequest(event.request))
@@ -20,7 +20,7 @@ async function handleRequest(request) {
         })
 
     } else if (new URL(request.url).pathname == "/" && !request.body ) {
-        return Response.redirect("https://github.com/cachecleanerjeet/Contact-form", 301)
+        return Response.redirect("https://github.com/naseef1235/Contactform", 301)
     } else {
         
         const body = await request.json()
@@ -41,7 +41,7 @@ async function handleRequest(request) {
                         "Content-Type": "application/json",
                         "Cache-Control": "no-cache, no-store, must-revalidate",
                         "Access-Control-Allow-Origin": "*",
-                        "Made-By": "https://github.com/cachecleanerjeet"
+                        "Made-By": "https://github.com/naseef1235"
                     })
                 })
 
@@ -76,7 +76,7 @@ async function handleRequest(request) {
                     "Content-Type": "application/json",
                     "Cache-Control": "no-cache, no-store, must-revalidate",
                     "Access-Control-Allow-Origin": "*",
-                    "Made-By": "https://github.com/cachecleanerjeet"
+                    "Made-By": "https://github.com/naseef1235"
                 })
             })
         }
